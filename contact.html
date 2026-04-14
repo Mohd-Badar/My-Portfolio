@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+
+        
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #c7d2fe);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .contact-box{
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            margin-bottom:15px;
+        }
+
+        p{
+            color:gray;
+            margin-bottom:20px;
+        }
+
+        .social-icons a{
+            display:inline-block;
+            margin:10px;
+            font-size:20px;
+            color:white;
+            background:#111;
+            padding:12px;
+            border-radius:50%;
+            transition:0.3s;
+        }
+
+        .social-icons a:hover{
+            transform:scale(1.2);
+        }
+
+        .social-icons a:nth-child(1):hover{
+            background:#E1306C; /* Instagram */
+        }
+
+        .social-icons a:nth-child(2):hover{
+            background:#1877F2; /* Facebook */
+        }
+
+        .back{
+            display:block;
+            margin-top:20px;
+            text-decoration:none;
+            color:#4f46e5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-box">
+        <h1>Contact Me</h1>
+        <p>Connect with me on social media 👇</p>
+
+        <div class="social-icons">
+            <a href="https://instagram.com/mohd.badar99" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://facebook.com/Mohd Badar" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <a href="index.html" class="back">← Back to Home</a>
+    </div>
+
+</body>
+</html>
+
