@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f0f1a;
+    color:white;
+    scroll-behavior:smooth;
+    line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    color:#00ffd5;
+    font-weight:bold;
+    font-size:20px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffd5;
+}
+
+.menu{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* ===== HERO ===== */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 60px 80px;
+    min-height:90vh;
+    gap:40px;
+}
+
+.hero-left{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero h1 span{
+    color:#00ffd5;
+}
+
+.hero h3{
+    margin:10px 0;
+    color:#aaa;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+/* buttons */
+.hero-buttons{
+    margin-top:20px;
+}
+
+.btn{
+    padding:10px 20px;
+    background:#00ffd5;
+    color:black;
+    text-decoration:none;
+    margin-right:10px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+.btn.outline{
+    background:transparent;
+    border:1px solid #00ffd5;
+    color:#00ffd5;
+}
+
+/* profile image */
+.hero-right img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00ffd5;
+}
+
+/* ===== SOCIALS ===== */
+.socials{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.socials a{
+    color:white;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    color:#00ffd5;
+}
+
+/* ===== SECTIONS ===== */
+.section{
+    padding:100px 60px;
+    text-align:center;
+    scroll-margin-top:100px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:30px;
+    color:#00ffd5;
+}
+
+/* ===== ABOUT ===== */
+.about-box{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:16px;
+    color:#ddd;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.skill-card{
+    background:#1c1c2e;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:scale(1.05);
+}
+
+/* ===== PROJECTS ===== */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+    justify-items:center;
+}
+
+/* iPhone style card */
+.project-card{
+    width:100%;
+    height: 520px;
+    max-width:320px;
+    background:#1c1c2e;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+/* 9:16 image */
+.project-card img{
+    width:100%;
+    height:50vh; 
+    aspect-ratio:9/16;
+    object-fit:cover;
+}
+
+/* text */
+.project-card h3{
+    padding:10px 12px 0;
+    font-size:16px;
+}
+
+.project-card p{
+    padding:5px 12px 15px;
+    font-size:13px;
+    color:#aaa;
+}
+
+/* ===== CONTACT ===== */
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-box{
+    background:#1c1c2e;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white; 
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px){
+
+    header{
+        padding:20px 30px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:100px 20px 60px;
+    }
+
+    .hero-right img{
+        width:220px;
+        height:220px;
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* mobile = 1 column */
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+        position:absolute;
+        top:70px;
+        right:0;
+        background:#111;
+        flex-direction:column;
+        width:200px;
+        padding:20px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .menu{
+        display:block;
+    }
+}
